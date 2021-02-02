@@ -9,22 +9,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TalentRadar">
+        <activity android:name=".teams"></activity>
         <activity android:name=".SecondActivity">
             <intent-filter>
-                <action android:name="android.intent.action.demoapp.SECOND_ACT"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.demoapp.SECOND_ACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainMenu">
             <intent-filter>
-                <action android:name="android.intent.action.demoapp.MAIN_MENU"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.demoapp.MAIN_MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Shortlist">
+            <intent-filter>
+                <action android:name="android.intent.action.demoapp.SHORTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".players">
+            <intent-filter>
+                <action android:name="android.intent.action.demoapp.PLAYERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

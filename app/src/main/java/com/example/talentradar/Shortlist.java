@@ -25,8 +25,7 @@ public class Shortlist extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.myMainPage:
-                        Intent intent = new Intent (Shortlist.this,MainMenu.class);
-                        startActivity(intent);
+                        startActivity(new Intent (Shortlist.this,MainMenu.class));
                         return true;
                     case R.id.myShortlist:
                         return true;

@@ -70,7 +70,7 @@
         android:layout_width="293dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:layout_below="@id/mySignUpEmailTextView"
         android:hint="Password"
         />

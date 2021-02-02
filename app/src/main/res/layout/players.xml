@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -16,8 +15,8 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="40dp"
+        android:text="Echipa n - Players"
         android:layout_marginTop="20dp"
-        android:text="Shortlist"
         android:textColor="#000000"
         android:background="#00A000"/>
     <TextView
@@ -48,8 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Age:"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="200dp"
         android:layout_below="@+id/mPlayersTitle"
         android:textSize="30dp"
         android:textColor="#222222"
@@ -60,34 +58,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Position:"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="200dp"
         android:layout_below="@+id/mPlayerName"
         android:textSize="30dp"
         android:textColor="#222222"
         />
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/mShortlistTeam"
+    <com.like.LikeButton
+        android:layout_below="@+id/mPlayersTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="320dp"
+        app:icon_type="heart"
+        app:icon_size="15dp"
+        android:id="@+id/star_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Team:"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/mPlayerPosition"
-        android:textSize="30dp"
-        android:textColor="#222222"
-        />
+        android:layout_height="wrap_content"/>
     <View
-        android:layout_below="@id/mShortlistTeam"
+        android:layout_below="@id/mPlayerPosition"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#999999" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/myMainMenuBottomNav"
-        app:menu="@menu/bottom_nav"
-        android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>

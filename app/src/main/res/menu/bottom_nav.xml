@@ -4,7 +4,8 @@
         android:id="@+id/myMainPage"
         android:enabled="true"
         android:icon="@drawable/search"
-        android:title="Search"/>
+        android:title="Search"
+        />
     <item
         android:id="@+id/myShortlist"
         android:enabled="true"

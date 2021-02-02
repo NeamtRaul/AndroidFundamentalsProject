@@ -20,12 +20,17 @@
         android:textColor="#222222"
         android:layout_weight="1"
         />
+
     <ScrollView
         android:id="@+id/myMainMenuScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/myMainMenuTextView"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +46,40 @@
                 android:layout_column="0"
                 app:cardBackgroundColor="#ffffff"
                 app:cardCornerRadius="8dp"
-                />
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/myU19Textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="U19"
+                        android:textSize="40dp"/>
+                    <TextView
+                        android:layout_below="@+id/myU19Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:text="Echipe:"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+                    <Button
+                        android:id="@+id/myU19Button"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/myU19Textview"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="View Teams"
+                        android:textSize="12dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -51,7 +89,39 @@
                 android:layout_column="0"
                 app:cardBackgroundColor="#ffffff"
                 app:cardCornerRadius="8dp"
-                />
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/myU17Textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="U17"
+                        android:textSize="40dp"/>
+                    <TextView
+                        android:layout_below="@+id/myU17Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:text="Echipe:"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+                    <Button
+                        android:id="@+id/myU17Button"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/myU17Textview"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="View Teams"
+                        android:textSize="12dp"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -61,7 +131,39 @@
                 android:layout_column="0"
                 app:cardBackgroundColor="#ffffff"
                 app:cardCornerRadius="8dp"
-                />
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/myU15Textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="U15"
+                        android:textSize="40dp"/>
+                    <TextView
+                        android:layout_below="@+id/myU15Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:text="Echipe:"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+                    <Button
+                        android:id="@+id/myU15Button"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/myU15Textview"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="View Teams"
+                        android:textSize="12dp"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -71,14 +173,50 @@
                 app:cardBackgroundColor="#ffffff"
                 android:layout_marginTop="15dp"
                 app:cardCornerRadius="8dp"
-                />
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/myU13Textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="U13"
+                        android:textSize="40dp"/>
+                    <TextView
+                        android:layout_below="@+id/myU13Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:text="Echipe:"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+                    <Button
+                        android:id="@+id/myU13Button"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/myU13Textview"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="View Teams"
+                        android:textSize="12dp"
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
         </GridLayout>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/myMainMenuBottomNav"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_nav"/>
+
+        </LinearLayout>
     </ScrollView>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/myMainMenuBottomNav"
-        app:menu="@menu/bottom_nav"/>
+
 </RelativeLayout>
